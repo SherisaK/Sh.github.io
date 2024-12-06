@@ -42,31 +42,31 @@
     <script>
         // Array of information
         const textArray = [
-            "You are so beautiful, adorable, and freaking hot."
-            "You have a kind, caring, and loving personality."
-            "You're a big softie."
-            "You're also a big orange cat, and I really love that about you."
-            "You're sassy as hell."
-            "You're freaky as hell."
-            "You listen to me, and I feel so loved and genuinely cared for when I'm around you."
-            "You're clingy, and I love that."
-            "You don't hide your feelings, and I love that about you."
-            "You're stubborn, yes, but I still love you."
-            "The way you speak alone... ugh, I love it."
-            "You're really mature for your age, and I love that."
-            "You're calm, but when you're pissed, it's also interesting."
-            "Your smile (your genuine smile) is so adorable; it makes me feel warm and fuzzy every time I see you smile."
-            "You're so adorable every time you giggle and laugh."
+            "You are so beautiful, adorable, and freaking hot.",
+            "You have a kind, caring, and loving personality.",
+            "You're a big softie.",
+            "You're also a big orange cat, and I really love that about you.",
+            "You're sassy as hell.",
+            "You're freaky as hell.",
+            "You listen to me, and I feel so loved and genuinely cared for when I'm around you.",
+            "You're clingy, and I love that.",
+            "You don't hide your feelings, and I love that about you.",
+            "You're stubborn, yes, but I still love you.",
+            "The way you speak alone... ugh, I love it.",
+            "You're really mature for your age, and I love that.",
+            "You're calm, but when you're pissed, it's also interesting.",
+            "Your smile (your genuine smile) is so adorable; it makes me feel warm and fuzzy every time I see you smile.",
+            "You're so adorable every time you giggle and laugh.",
             "You're so cute when you're nervous."
 
             ];
 
         function generateRandomText() {
             // Generate a random number between 1 and 10
-            const randomNumber = Math.floor(Math.random() * 10) + 1;
+            const randomNumber = Math.floor(Math.random() * textArray.length);
 
             // Get the text corresponding to the random number
-            const randomText = textArray[randomNumber - 1];
+            const randomText = textArray[randomNumber];
 
             // Display the result
             document.getElementById("result").innerText = `${randomText}`;
